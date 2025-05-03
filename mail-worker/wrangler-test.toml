@@ -1,0 +1,33 @@
+name = "cloud-mail-test"
+main = "src/index.js"
+compatibility_date = "2025-04-09"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+[[d1_databases]]
+binding = "db"
+database_name = "email-test"
+database_id = ""
+
+[[kv_namespaces]]
+binding = "kv"
+id = ""
+
+[[r2_buckets]]
+binding = "r2"
+bucket_name = "email-test"
+
+[assets]
+binding = "assets"
+directory = "./dist"
+
+[vars]
+domain = ["", ""]
+admin = ""
+r2_domain = ""
+jwt_secret = ""
+site_key = ""
+secret_key = ""
+
